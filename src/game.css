@@ -1,0 +1,45 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: dodgerblue;
+}
+
+.easy{
+  height:29%;
+  width: 29%;
+}
+
+.medium {
+  height:23%;
+  width: 23%;
+}
+
+.hard {
+  height:18%;
+  width: 18%;
+}
+
+img {
+  margin: 10px;
+}
+
+button {
+  border-radius: 50%;
+  padding: 20px;
+  background-color: white;
+  font-size: 25px;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.selected {
+  border: 3px solid green;
+}
