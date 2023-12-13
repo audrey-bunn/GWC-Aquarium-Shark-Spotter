@@ -41,5 +41,27 @@ div {
 }
 
 .selected {
-  border: 3px solid green;
+  border: 5px solid springgreen;
+}
+
+.matched {
+  display: none;
+}
+
+#failure {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  color: pink;
+  display: none;
+}
+
+#success {
+  display: none;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  color: springgreen;
 }
