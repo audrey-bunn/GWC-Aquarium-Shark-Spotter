@@ -6,26 +6,35 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="game.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
 </head>
 
-<body>
-  <h1 id='failure'>Sorry those are not the same shark!</h1>
-  <h1 id='success'>Good job! You spotted </h1>
-  <div>
-    <img class= 'easy' onclick="checkMatch(event)" src= "resources/Cecil-1.png" name='Cecil'>
-    <img class= 'easy' onclick="checkMatch(event)" src= "resources/Cecil-2.png" name='Cecil'>
-    <img class= 'easy' onclick="checkMatch(event)" src= "resources/Claud-3.jpg" name='Claud'>
-    <img class= 'easy' onclick="checkMatch(event)" src= "resources/Claud-4.jpg" name='Claud'>
-    <img class= 'easy' onclick="checkMatch(event)" src= "resources/GingerBear-1.png" name='Ginger'>
-    <img class= 'easy' onclick="checkMatch(event)" src= "resources/GingerBear-2.png" name='Ginger'>
+<body onload='randomizeSharks()'>
+  <div id='info-panel'>
+    <h2 id='instructions'>Analyze the sharks to find two images of the same shark. Select two images to see if they're a
+      match, match all the sharks to win! </h2>
+    <h2 id='hint'></h2>
+    <h2 id='failure'>Sorry, those are not the same shark!</h2>
+    <h2 id='success'>Good job! You spotted </h2>
   </div>
-    <div id = 'button container'>
-      <a href = "../index.html">
-          <button> Exit </button>
-    </a>
-    </div>
-  <script src="script.js"></script>
-
+  <div>
+    <img class="easy shark-image" onclick="checkMatch(event)" src="resources/" name=''>
+    <img class="easy shark-image" onclick="checkMatch(event)" src="resources/" name=''>
+    <img class="easy shark-image" onclick="checkMatch(event)" src="resources/" name=''>
+    <img class="easy shark-image" onclick="checkMatch(event)" src="resources/" name=''>
+    <img class="easy shark-image" onclick="checkMatch(event)" src="resources/" name=''>
+    <img class="easy shark-image" onclick="checkMatch(event)" src="resources/" name=''>
+  </div>
+  <div id='button-container'>
+    <button id='button'>
+      <a href="../index.html" id='button-text'>Exit</a>
+      <img id='button-image' src='resources/buttons/blue-bubble.png'>
+    </button>
+    <button id='button' onClick='giveHint()'>
+      <p id='button-text'>Hint</p>
+      <img id='button-image' src='resources/buttons/blue-bubble.png'>
+    </button>
+  </div>
 </body>
 
 </html>

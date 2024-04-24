@@ -6,27 +6,28 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="index.css" rel="stylesheet" type="text/css" />
+  <script src="src/script.js"></script>
 </head>
 
 <body>
   <script src="script.js"></script>
-  <video autoplay muted loop id="shark-background">
-    <source src="/src/resources/greypass003.mp4" type="video/mp4">
-  </video>
 
-  <h1 class='text'>Sand Tiger Spotter</h1>
-  <h3 class='text'> Can you identify the same sand tiger shark based on its spot pattern? </h3>
+  <h1 class='text' id='title'>Shark Spotter</h1>
+  <h3 class='text' id='subheading'> Can you match two images of the same sand tiger shark by their identifying marks? </h3>
 
   <div id='button-container'>
-    <a href="src/easy.html">
-        <button>Easy</button>
-    </a>
-    <a href="src/medium.html">
-        <button>Medium</button>
-    </a>
-    <a href="src/hard.html">
-        <button>Hard</button>
-    </a>
+    <button id='button' onclick="navigateToGame('easy')">
+      <a href="src/easy.html" id='easy-text' class='button-text'>Easy</a>
+      <img id='button-image' src='src/resources/buttons/green-bubble.png'>
+    </button>
+    <button id='button' onclick="navigateToGame('medium')">
+      <a href="src/medium.html" id='medium-text' class='button-text'>Medium</a>
+      <img id='button-image' src='src/resources/buttons/yellow-bubble.png'>
+    </button>
+    <button onclick="navigateToGame('hard')" id='button'>
+      <a href="src/hard.html" id='hard-text' class='button-text'>Hard</a>
+      <img id='button-image' src='src/resources/buttons/red-bubble.png'>
+    </button>
   </div>
 </body>
 

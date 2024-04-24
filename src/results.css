@@ -2,3 +2,59 @@ html {
   height: 100%;
   width: 100%;
 }
+
+body {
+    background-color: #6bd1b6;
+}
+
+#shark-background {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#time {
+  color: springgreen;
+  margin-top: 5%;
+}
+
+#congrats {
+  margin-top: 8%;
+}
+
+h1 {
+  font-size: 5vw;
+  text-align: center;
+  font-family: 'Verdana', sans-serif;
+  margin: 19vh 3vw;
+  margin-bottom: 3%;
+  color: white;
+}
+
+#button-image {
+  width: 11vw;
+}
+
+#button {
+  background-color: transparent;
+  border: 0;
+  padding-top: 0;
+  width: 100%;
+  padding: 1%;
+}
+
+#button-text {
+  position: absolute;
+  margin-left: 1.6%;
+  margin-top: 4%;
+  font-size: 1.7vw;
+  color: white;
+  display: inline;
+  text-decoration: none;
+}
